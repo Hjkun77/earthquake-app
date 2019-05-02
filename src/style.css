@@ -1,0 +1,44 @@
+.body {
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  grid-gap: 30px;
+}
+
+.header {
+  background: #F2F2F2;
+  margin-bottom: 60px;
+}
+
+.loading {
+  background: #DEE1E2;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.header-wrapper {
+  width: 75%;
+  margin: auto;
+  padding: 60px;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+.navigation {
+  border-bottom: 1px solid grey;
+  margin-bottom: 30px;
+}
+
+.navigation ul > li {
+  width: 25%;
+  padding: 15px;
+  text-align: center;
+}
+
+.navigation ul > li:hover {
+  color: white;
+  background: grey;
+  cursor: pointer;
+}

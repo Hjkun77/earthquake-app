@@ -1,0 +1,25 @@
+.card {
+  padding: 30px;
+  text-align: center;
+  border-radius: 4px;
+-webkit-box-shadow: 1px 4px 5px rgba(153, 153, 153, 0.2);
+        box-shadow: 1px 4px 5px rgba(153, 153, 153, 0.2);
+}
+
+.mag h1 {
+  font-size: 54px;
+  font-weight: bold;
+}
+
+.mag p {
+  margin-bottom: 8px;
+}
+
+.mag p {
+  font-size: 14px;
+}
+
+.card h4 {
+  font-size: 18px;
+  margin: 8px auto;
+}
