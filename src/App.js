@@ -107,7 +107,7 @@ class App extends Component {
 
 
   render() {
-    const { earthquakes, searchfield, magOne, magTwo, magThree } = this.state;
+    const { earthquakes, searchfield, all, magOne, magTwo, magThree } = this.state;
 
     const filteredShakes = earthquakes.filter(earthquake => {
       const {place, mag} = earthquake.properties;
@@ -130,21 +130,18 @@ class App extends Component {
       ) :
       (
         <div className="App">
-          <div className="header">
-            <div className="header-wrapper">
-              <h1>ShakePH</h1>
-              {/* <input type="date" onChange={this.onDateChange}/> */}
-            </div>
+          <div className="header flex justifyCenter alignCenter">
+            <h1>SHAKEPH</h1>
           </div>
-          <div className="container">
-            <div className="navigation">
-              <ul className="flex">
-                <li onClick={this.handleAll}>All</li>
-                <li onClick={this.handleMagOne}>Magnitude 1-2.9</li>
-                <li onClick={this.handleMagTwo}>Magnitude 3-5.9</li>
-                <li onClick={this.handleMagThree}>Magnitude 6-9</li>
-              </ul>
-            </div>
+          <div className="navigation">
+            <ul className="flex container">
+              <li onClick={this.handleAll} style={all ? {textDecoration: 'underline', fontWeight: 'bold'} : null}>All</li>
+              <li onClick={this.handleMagOne} style={magOne ? {textDecoration: 'underline', fontWeight: 'bold'} : null}>Magnitude 1-2.9</li>
+              <li onClick={this.handleMagTwo} style={magTwo ? {textDecoration: 'underline', fontWeight: 'bold'} : null}>Magnitude 3-5.9</li>
+              <li onClick={this.handleMagThree} style={magThree ? {textDecoration: 'underline', fontWeight: 'bold'} : null}>Magnitude 6-9</li>
+            </ul>
+          </div>
+          <div className="container  pb-5">
             <div className="body">
               {this.renderEarthquakeCards(filteredShakes)}
             </div>

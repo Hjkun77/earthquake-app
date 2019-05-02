@@ -6,8 +6,12 @@
         box-shadow: 1px 4px 5px rgba(153, 153, 153, 0.2);
 }
 
+.card:hover {
+  background: #ABCBBC;
+}
+
 .mag h1 {
-  font-size: 54px;
+  font-size: 60px;
   font-weight: bold;
 }
 

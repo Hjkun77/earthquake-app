@@ -5,8 +5,8 @@
 }
 
 .header {
-  background: #F2F2F2;
-  margin-bottom: 60px;
+  background: url('./assets/background.svg');
+  min-height: 320px;
 }
 
 .loading {
@@ -15,30 +15,32 @@
   width: 100%;
 }
 
-.header-wrapper {
-  width: 75%;
-  margin: auto;
-  padding: 60px;
-}
-
 .header h1 {
   text-align: center;
-  font-size: 60px;
+  color: white;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 123px;
+  letter-spacing: 0.05em;
 }
 
 .navigation {
-  border-bottom: 1px solid grey;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+  background: #E5E5E5;
 }
 
 .navigation ul > li {
   width: 25%;
-  padding: 15px;
+  padding: 30px;
+  line-height: 30px;
+  font-size: 16px;
   text-align: center;
 }
 
 .navigation ul > li:hover {
-  color: white;
-  background: grey;
+  /* background: #ABCBBC; */
+  /* color: white; */
+  /* background: grey;*/
+  text-decoration: underline;
   cursor: pointer;
 }
